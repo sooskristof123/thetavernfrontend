@@ -1,0 +1,14 @@
+.slider {
+    margin-top: 80px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 333px;
+}
+
+.slider__card {
+    margin: 0 auto;
+    width: 645px;
+    height: 299px;
+    background-color: rgba(0, 0, 0, .2);
+}

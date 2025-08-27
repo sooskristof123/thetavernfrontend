@@ -1,0 +1,15 @@
+.header {
+    width: 1200px;
+    height: 48px;
+    margin: 36px auto;
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Exo 2";
+    margin-right: 32px;
+}
