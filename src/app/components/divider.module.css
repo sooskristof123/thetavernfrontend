@@ -4,3 +4,19 @@
     height: 2px;
     background: linear-gradient(110deg, rgba(225, 124, 96, 0), rgba(225, 124, 96, 1), rgba(225, 124, 96, 0));
 }
+
+.width_small {
+    width: 205px;
+}
+
+.width_medium {
+    width: 400px;
+}
+
+.width_large {
+    width: 600px;
+}
+
+.width_full {
+    width: 100%;
+}

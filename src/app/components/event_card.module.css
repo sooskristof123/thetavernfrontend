@@ -1,0 +1,42 @@
+.event_card {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 309px;
+    height: 169px;
+    background-color: var(--background);
+    border-radius: 12px;
+    background-image: url("/images/wow_event.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.event_card::after {
+    border-radius: 12px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.event_card__content {
+    padding-left: 20px;
+    padding-bottom: 11px;
+    position: relative;
+    z-index: 2;
+}
+
+.event_card__content__info p {
+    line-height: 150%;
+}
+
+.event_card__content__info {
+    font-weight: 400!important;
+    font-size: 14px;
+    color: #F4C8BD;
+}

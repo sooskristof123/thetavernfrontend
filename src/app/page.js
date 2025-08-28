@@ -4,6 +4,9 @@ import Hero from "./sections/hero";
 import Slider from "./components/slider";
 import Button from "./components/button";
 import Divider from "./components/divider";
+import CategoryCard from "./components/category_card";
+import GameCard from "./components/game_card";
+import EventCard from "./components/event_card";
 
 export default function Home() {
   return (
@@ -26,6 +29,43 @@ export default function Home() {
 
         <div className={styles.home_categories}>
           <h3 className={styles.gradient_text}>Kiemelt kategóriák</h3>
+          <Divider width="small" />
+          <div className={styles.home_categories__cards}>
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+          </div>
+        </div>
+
+        <div className={styles.home_events_recommendations}>
+          <div className={styles.home_events_recommendations__content}>
+            <div className={styles.home_events_recommendations__content__games}>
+              <h3>Te hol játszol legközelebb?</h3>
+              <p>Offline és online gamer események országszerte</p>
+              <div className={styles.home_events_recommendations__content__game_cards}>
+                <GameCard />
+                <GameCard />
+                <GameCard />
+                <GameCard />
+                <GameCard />
+                <GameCard />
+              </div>
+              <p className={styles.home_events_recommendations__content__button}>Összes gamer esemény itt</p>
+            </div>
+
+            <div className={styles.home_events_recommendations__content__event_cards}>
+              <EventCard />
+              <EventCard />
+              <EventCard />
+              <EventCard />
+            </div>
+
+          </div>
         </div>
     </div>
   );

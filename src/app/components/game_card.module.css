@@ -1,0 +1,9 @@
+.game_card {
+    width: 151px;
+    height: 58px;
+    border-radius: 12px;
+    background-color: var(--background);
+    background-image: url("/images/lol.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
