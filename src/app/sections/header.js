@@ -9,7 +9,7 @@ export default function Header() {
         <p className={styles.header_logo}>TT</p>
         <SearchBar />
         <Navigation />
-        <Button />
+        <Button label="Bejelentkezés"/>
     </div>
   );
 }

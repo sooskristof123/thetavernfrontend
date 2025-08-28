@@ -1,0 +1,6 @@
+.divider {
+    margin: 0 auto;
+    width: 330px;
+    height: 2px;
+    background: linear-gradient(110deg, rgba(225, 124, 96, 0), rgba(225, 124, 96, 1), rgba(225, 124, 96, 0));
+}
