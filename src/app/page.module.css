@@ -134,6 +134,10 @@
   font-weight: normal!important;
 }
 
+.home_events_recommendations__content__event_title {
+  display: none;
+}
+
 .home_events_recommendations__content__button_mobile {
   display: none;
 }
@@ -314,6 +318,7 @@
     }
 
     .home_events_recommendations__content__event_title {
+      display: block;
       margin-top: 20px;
       margin-bottom: 12px;
       font-size: 24px;
