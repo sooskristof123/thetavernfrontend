@@ -1,11 +1,15 @@
 .page {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
+  height: fit-content;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero_content {
   margin: 80px auto;
-  width: 669px;
+  max-width: 669px;
+  width: calc(100% - 40px);
   height: 391px;
   text-align: center;
 }
@@ -81,7 +85,8 @@
   position: relative;
   border-radius: 12px;
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
+  width: calc(100% - 40px);
   height: 428px;
   background-image: url("/images/events_recommendation_bg.png");
   margin-bottom: 120px;
@@ -135,6 +140,105 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 26px;
+}
+
+.events_near {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.events_near::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(400px 150px at center, #882A11, transparent 100%);
+  filter: blur(150px);
+}
+
+.events_near h4 {
+  background: linear-gradient(90deg, rgba(225, 124, 96, 1), rgba(255, 147, 119, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;  
+}
+
+.events_near__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.events_near__header p {
+  font-size: 14px;
+}
+
+.home_partners {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.home_partners h3 {
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, rgba(225, 124, 96, 1), rgba(255, 147, 119, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;  
+}
+
+.home_news {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.home_news::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/particles.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto;
+  transform: rotate(180deg);
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: lighten;
+  padding-bottom: 80px;
+}
+
+.home_news::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(1200px 1100px at bottom, #882A11, transparent 100%);
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.home_news h3 {
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, rgba(225, 124, 96, 1), rgba(255, 147, 119, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;  
 }
 
 

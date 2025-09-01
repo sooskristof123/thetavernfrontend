@@ -1,0 +1,11 @@
+.news {
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+.news_cards {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+}

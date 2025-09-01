@@ -7,6 +7,10 @@ import Divider from "./components/divider";
 import CategoryCard from "./components/category_card";
 import GameCard from "./components/game_card";
 import EventCard from "./components/event_card";
+import EventsNear from "./sections/events_near";
+import Partners from "./sections/partners";
+import News from "./sections/new";
+import Footer from "./sections/footer";
 
 export default function Home() {
   return (
@@ -67,6 +71,29 @@ export default function Home() {
 
           </div>
         </div>
+
+        <div className={styles.events_near}>
+          <div className={styles.events_near__header}>
+            <h4>Események a közeledben</h4>
+            <p>Több esemény a közelben</p>
+          </div>
+          <EventsNear />
+        </div>
+
+        <div className={styles.home_partners}>
+          <h3 className={styles.home_partners__title}>Partnereink</h3>
+          <Divider width="small" />
+          <Partners />
+        </div>
+
+        <div className={styles.home_news}>
+          <h3>Legújabb híreink</h3>
+          <Divider width="small" />
+          <News />
+        </div>
+
+        <Divider width="xlarge" />
+        <Footer />
     </div>
   );
 }

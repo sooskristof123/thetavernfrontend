@@ -17,6 +17,10 @@
     width: 600px;
 }
 
+.width_xlarge {
+    width: 1440px;
+}
+
 .width_full {
     width: 100%;
 }

@@ -1,0 +1,47 @@
+.event_card {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 309px;
+    height: 169px;
+    background-color: var(--background);
+    border-radius: 12px;
+    background-image: url("/images/ogex_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.event_card::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 223px;
+    height: 77px;
+    background-image: url("/images/oge_horizontal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.event_card__content {
+    margin-top: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.event_card__content__title {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.event_card__content__info p {
+    line-height: 150%;
+}
+
+.event_card__content__info {
+    font-weight: 400!important;
+    color: #F4C8BD;
+}
