@@ -11,7 +11,7 @@ export default function News() {
             <NewsCard />
             <NewsCard />
         </div>
-        <Button variant="secondary" label="További híreink"/>
+        <Button animated={true} variant="secondary" label="További híreink"/>
     </div>
   );
 }
