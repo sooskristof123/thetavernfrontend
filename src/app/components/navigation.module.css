@@ -6,3 +6,10 @@
     align-items: center;
     margin-right: 40px;
 }
+
+@media screen and (max-width: 640px) {
+    .navigation {
+        display: none;
+        
+    }
+}

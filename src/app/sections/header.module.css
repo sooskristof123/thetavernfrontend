@@ -15,3 +15,24 @@
     font-family: "Exo 2";
     margin-right: 32px;
 }
+
+@media screen and (max-width: 640px) {
+    .header {
+        width: 100vw;
+        height: 103px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: unset;
+        margin: unset;
+
+    }
+
+    .header_logo {
+        margin-top: 8px;
+        margin-bottom: 9px;
+    }
+
+    .header button {
+        display: none;
+    }
+}

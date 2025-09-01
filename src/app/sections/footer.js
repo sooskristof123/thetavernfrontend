@@ -4,6 +4,7 @@ import styles from "./footer.module.css";
 export default function Footer() {
   return (
     <div className={styles.footer}>
+      <div className={styles.footer_wrapper}>
         <div className={styles.footer_content}>
             <p className={styles.footer_content__org_logo}>TT</p>
             <p className={styles.footer_content__org_name}>TheTavern</p>
@@ -23,6 +24,8 @@ export default function Footer() {
             <Link href="/">Rólunk</Link>
             <Link href="/">Bejelentkezés</Link>
         </div>
+      </div>
+        
     </div>
   );
 }

@@ -241,4 +241,10 @@
   color: transparent;  
 }
 
+@media screen and (max-width: 640px) {
+    .page {
+        padding: 0 16px;
+    }
+}
+
 
