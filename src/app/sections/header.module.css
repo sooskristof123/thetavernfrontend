@@ -18,11 +18,11 @@
 
 @media screen and (max-width: 640px) {
     .header {
-        width: 100vw;
         height: 103px;
         flex-direction: column;
         align-items: flex-start;
         padding: unset;
+        padding-inline: 16px;
         margin: unset;
 
     }

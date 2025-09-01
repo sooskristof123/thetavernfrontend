@@ -85,3 +85,38 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+@media screen and (max-width: 640px) {
+    .slider {
+        margin-top: 30px;
+        height: fit-content;
+        padding-inline: 16px;
+    }
+
+    .slider_card {
+        width: 100%;
+        height: 215px;
+    }
+
+    .slider_card__content {
+        padding-left: 14px;
+    }
+
+    .slider_card__content__title {
+        width: 200px;
+        font-size: 20px;
+        letter-spacing: unset;
+    }
+
+    .slider_card__content p {
+        font-size: 12px;
+    }  
+
+    .slider_card__content__description {
+        width: 221px;
+    }
+
+    .slider_card button {
+        display: none;
+    }
+}

@@ -43,3 +43,16 @@
     position: relative;
     z-index: 2;
 }
+
+@media screen and (max-width: 640px) {
+    .category_card {
+        width: 173px;
+        height: 71px;
+    }
+
+    .category_card__title {
+        margin-left: 12px;
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+}

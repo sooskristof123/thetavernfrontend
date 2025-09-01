@@ -24,3 +24,9 @@
 .width_full {
     width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+    .width_xlarge {
+        width: 100%;
+    }
+}

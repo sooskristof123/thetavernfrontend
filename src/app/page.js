@@ -62,12 +62,14 @@ export default function Home() {
               <p className={styles.home_events_recommendations__content__button}>Összes gamer esemény itt</p>
             </div>
 
+            <h4 className={styles.home_events_recommendations__content__event_title}>Események</h4>
             <div className={styles.home_events_recommendations__content__event_cards}>
               <EventCard />
               <EventCard />
               <EventCard />
               <EventCard />
             </div>
+            <p className={styles.home_events_recommendations__content__button_mobile}>Összes gamer esemény itt</p>
 
           </div>
         </div>

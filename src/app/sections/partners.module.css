@@ -8,3 +8,27 @@
     margin-block: 30px 80px;
     opacity: .5;
 }
+
+@media screen and (max-width: 640px) {
+    .partners {
+        gap: 20px;
+        width: unset;
+        overflow-x: scroll;
+        margin-block: 30px 50px;    
+    }
+
+    .partners__bc {
+        width: 83px;
+        height: 73px;
+    }
+
+    .partners__sheldons {
+        width: 120px;
+        height: 28px;
+    }
+
+    .partners__oge {
+        width: 120px;
+        height: 41px;
+    }
+}

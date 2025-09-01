@@ -134,6 +134,10 @@
   font-weight: normal!important;
 }
 
+.home_events_recommendations__content__button_mobile {
+  display: none;
+}
+
 .home_events_recommendations__content__event_cards {
   margin-left: 24px;
   width: 648px;
@@ -243,7 +247,91 @@
 
 @media screen and (max-width: 640px) {
     .page {
-        padding: 0 16px;
+      padding: unset;
+    }
+
+    .hero_content {
+      height: min-content;
+      margin: 30px auto;
+    }
+
+    .hero_content__title h2 {
+      font-size: 49px;
+    }
+
+    .hero_content__title h1 {
+      font-size: 64px;
+    }
+
+    .home_categories {
+      height: min-content;
+      margin-block: 40px;
+    }
+
+    .home_categories h3 {
+      font-size: 40px;
+    }
+
+    .home_categories__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .home_events_recommendations {
+      height: fit-content;
+      width: 100%;
+      padding-block: 20px;
+      padding-inline: 16px;
+      border-radius: unset;
+      margin-bottom: 40px;
+    }
+
+    .home_events_recommendations::after {
+      border-radius: unset;
+    }
+
+    .home_events_recommendations__content {
+      flex-direction: column;
+    }
+
+    .home_events_recommendations__content h3 {
+      font-size: 39px;
+    }
+
+    .home_events_recommendations__content p {
+      width: 358px;
+    }
+
+    .home_events_recommendations__content__game_cards {
+      margin-top: 17px;
+      width: fit-content;
+    }
+
+    .home_events_recommendations__content__event_cards {
+      margin-left: unset;
+      overflow-x: scroll;
+      display: flex;
+    }
+
+    .home_events_recommendations__content__event_title {
+      margin-top: 20px;
+      margin-bottom: 12px;
+      font-size: 24px;
+      color: var(--foreground);
+    }
+
+    .home_events_recommendations__content__button {
+      display: none;
+    }
+
+    .home_events_recommendations__content__button_mobile {
+      display: block;
+      margin-block: 20px;
+      font-family: 20px;
+    }
+
+    .events_near {
+      padding-inline: 16px;
     }
 }
 

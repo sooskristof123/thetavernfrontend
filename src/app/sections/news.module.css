@@ -9,3 +9,17 @@
     gap: 30px;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width: 640px) {
+    .news {
+        margin-top: 16px;
+        width: unset;
+    }
+
+    .news_cards {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 26px;
+    }
+    
+}

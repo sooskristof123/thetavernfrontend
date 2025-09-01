@@ -33,3 +33,9 @@
           mask-composite: exclude;
     pointer-events: none;
 }
+
+@media screen and (max-width: 640px) {
+    .searchbar {
+        width: 100%;
+    }
+}

@@ -78,3 +78,21 @@
     justify-content: center;
     flex-direction: column;
 }
+
+@media screen and (max-width: 640px) {
+    .footer {
+        height: fit-content;
+        padding: 16px;
+        margin-bottom: 45px;
+    }
+
+    .footer_wrapper {
+        flex-direction: column;
+    
+    }
+
+    .footer_nav {
+        margin-top: 16px;
+        text-align: left;
+    }
+}
