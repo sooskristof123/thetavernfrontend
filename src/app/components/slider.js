@@ -12,7 +12,7 @@ export default function Slider() {
             <p className={styles.slider_card__content__description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
           </div>
           <div className={styles.slider_card__button__container}>
-            <Button label="Részletek" variant="secondary"/>
+            <Button animated={true} label="Részletek" variant="secondary"/>
           </div>
         </div>
     </div>
