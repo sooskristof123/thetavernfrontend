@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Button from "./button";
 import styles from "./slider.module.css";
+import Image from "next/image";
 
 const slides = [
   {
@@ -50,7 +51,6 @@ export default function Slider() {
     setCurrentSlide(index);
   };
 
-  // Touch handlers for mobile swipe
   const handleTouchStart = (e) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
@@ -125,24 +125,39 @@ export default function Slider() {
         </div>
       </div>
       
-      {/* Navigation Arrows */}
-      <button 
-        className={`${styles.slider_nav} ${styles.slider_nav__prev}`}
-        onClick={prevSlide}
-        aria-label="Previous slide"
-      >
-        &#8249;
-      </button>
-      <button 
-        className={`${styles.slider_nav} ${styles.slider_nav__next}`}
-        onClick={nextSlide}
-        aria-label="Next slide"
-      >
-        &#8250;
-      </button>
-
-      {/* Dots Indicator */}
-      <div className={styles.slider_dots}>
+      {/* Navigation Container with Buttons and Dots */}
+      <div className={styles.slider_navigation}>
+        <button 
+          className={`${styles.slider_nav} ${styles.slider_nav__prev}`}
+          onClick={prevSlide}
+          aria-label="Previous slide"
+        >
+          <Image src="/icons/arrow.svg" alt="Previous" width={5.65} height={10} />
+        </button>
+        
+        {/* Dots Indicator */}
+        <div className={styles.slider_dots}>
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`${styles.slider_dot} ${index === currentSlide ? styles.slider_dot__active : ''}`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+        
+        <button 
+          className={`${styles.slider_nav} ${styles.slider_nav__next}`}
+          onClick={nextSlide}
+          aria-label="Next slide"
+        >
+          <Image src="/icons/arrow.svg" alt="Previous" width={5.65} height={10} />
+        </button>
+      </div>
+      
+      {/* Mobile-only dots */}
+      <div className={styles.slider_dots_mobile}>
         {slides.map((_, index) => (
           <button
             key={index}
