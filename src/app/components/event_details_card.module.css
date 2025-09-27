@@ -1,0 +1,35 @@
+.event_details_card{
+    width: 387px;
+    height: 191px;
+    border-radius: 12px;
+    background: #171615;
+    padding-left: 30px;
+    padding-block: 24px;
+}
+
+.event_details_card_title {
+    color: #475C6C;
+    font-weight: 700;
+    letter-spacing: .64px;
+    margin-bottom: 14px;
+}
+
+.event_details_card_link {
+    font-size: 14px;
+    letter-spacing: .56px;
+    margin-top: 10px;
+
+}
+
+.event_details_card_content h4 {
+    background: linear-gradient(90deg, rgba(225, 124, 96, 1), rgba(255, 147, 119, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+
+}
+
+.event_details_card_content > :nth-child(2) {
+    -webkit-text-fill-color: #FFFFFF;
+}

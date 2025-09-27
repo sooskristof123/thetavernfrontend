@@ -12,13 +12,14 @@
 .page_event_banner {
     background-image: url('/images/image_1.png');
     background-size: cover;
-    background-position: center;
-    height: 500px;
+    background-position-y: 57%;
+    background-position-x: center;
+    height: 410px;
     width: 100%;
 }
 
 .page_event_banner__overlay {
-    height: 500px;
+    height: 410px;
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +31,7 @@
 
 .page_event_banner__overlay2 {
     position: absolute;
-    height: 500px;
+    height: 410px;
     top: 0;
     left: 0;
     right: 0;
@@ -48,6 +49,8 @@
 
 .page_content__header {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
     align-items: center;
     margin-top: -40px;
     justify-content: space-between;
@@ -61,3 +64,13 @@
     background-clip: text; 
     color: transparent;  
 }
+
+.page_content__cards {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
