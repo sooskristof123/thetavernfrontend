@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Button from "./button";
 import styles from "./slider.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   {
@@ -118,7 +119,9 @@ export default function Slider() {
                 <p className={styles.slider_card__content__description}>{slide.description}</p>
               </div>
               <div className={styles.slider_card__button__container}>
-                <Button animated={true} label="Részletek" variant="secondary"/>
+                <Link href={`/events/${slide.id}`} className={styles.slider_card__link}>
+                  <Button animated={true} label="Részletek" variant="secondary"/>
+                </Link>
               </div>
             </div>
           ))}
