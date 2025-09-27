@@ -16,7 +16,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
-        <Header />
         <Hero />
         <Slider />
 
