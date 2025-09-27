@@ -1,0 +1,9 @@
+.tag{
+    background: #475C6C;
+    padding-inline: 14px;
+    padding-block: 9px;
+    border-radius: 27px;
+    font-weight: 600;
+    letter-spacing: .64px;
+    width: fit-content;
+}
