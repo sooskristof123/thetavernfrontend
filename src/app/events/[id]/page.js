@@ -5,6 +5,7 @@ import Tag from "@/app/components/tag";
 import Link from "next/link";
 import Divider from "@/app/components/divider";
 import EventsNear from "@/app/sections/events_near";
+import DateTimeCard from "@/app/components/datetime_card";
 
 export default function Events() {
   return (
@@ -47,6 +48,15 @@ export default function Events() {
 
           </div>
           <Link href="/"><p className={styles.page_content__details__link}>Olvass Tovább</p></Link>
+        </div>
+        <div className={styles.page_content__datetimes}>
+          <h4>Időpontok</h4>
+          <div className={styles.page_content__datetimes__cards}>
+            <DateTimeCard description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            <DateTimeCard />
+            <DateTimeCard description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            <DateTimeCard />
+          </div>
         </div>
         <div className={styles.page_content__events_near}>
           <h4>További hasonló esemény</h4>

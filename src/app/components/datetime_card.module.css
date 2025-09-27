@@ -1,0 +1,81 @@
+.datetime_card {
+    width: 282px;
+    height: fit-content;
+    background-color: #171615;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-block: 24px;
+}
+
+.datetime_card_desc {
+    position: relative;
+    width: 282px;
+    height: fit-content;
+    background-color: #171615;
+    border-radius: 12px;
+    padding-top: 20px;
+    border: none;
+    z-index: 1;
+}
+
+.datetime_card_desc::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px; 
+    background: linear-gradient(45deg, #C34F31, #761E08);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.datetime_card_desc h5 {
+    margin-left: 20px;
+    background: linear-gradient(90deg, rgba(225, 124, 96, 1), rgba(255, 147, 119, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;  
+}
+
+.datetime_card_desc > :nth-child(2) {
+    -webkit-text-fill-color: white;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.datetime_card_desc_content {
+    background-color: rgba(136, 42, 17, .30);
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.datetime_card_desc button {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.datetime_card h5 {
+    background: linear-gradient(90deg, rgba(225, 124, 96, 1), rgba(255, 147, 119, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;  
+}
+
+.datetime_card > :nth-child(2) {
+    -webkit-text-fill-color: white;
+    color: #FFFFFF;
+}
+
+.datetime_card button {
+    margin-top: 16px;
+}
