@@ -93,9 +93,7 @@ export default function Home() {
           <Divider width="small" />
           <News />
         </div>
-
         <Divider width="xlarge" />
-        <Footer />
     </div>
   );
 }

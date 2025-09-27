@@ -1,10 +1,7 @@
 .page {
   width: 100%;
   height: fit-content;
-  /*margin: 0 auto;*/
-  /*padding: 0 20px;*/
   z-index: 1;
-  position: absolute;
   top: 0;
   left: 0;
 }
@@ -16,6 +13,8 @@
     background-position-x: center;
     height: 410px;
     width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .page_event_banner__overlay {
@@ -45,6 +44,7 @@
     z-index: 3;
     width: 1440px;
     margin: 0 auto;
+    margin-top: 300px;
 }
 
 .page_content h4 {
@@ -107,7 +107,45 @@
 
 .page_content__details__link {
     margin-top: 16px;
-    color: red;
+}
+
+.page_content__events_near {
+    margin-top: 40px;
+}
+
+.page_content__events_near::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/particles.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto;
+  transform: rotate(180deg);
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: lighten;
+  padding-bottom: 80px;
+}
+
+.page_content__events_near::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(1200px 400px at 50% 100%, #882A11, transparent 100%);
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.page_content__events_near h4 {
+    margin-bottom: 20px;
 }
 
 

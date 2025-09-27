@@ -2,11 +2,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 @media screen and (max-width: 640px) {
     .events_near {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 }

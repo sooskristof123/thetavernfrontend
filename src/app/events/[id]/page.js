@@ -3,6 +3,8 @@ import styles from "./events.module.css";
 import EventDetailsCard from "@/app/components/event_details_card";
 import Tag from "@/app/components/tag";
 import Link from "next/link";
+import Divider from "@/app/components/divider";
+import EventsNear from "@/app/sections/events_near";
 
 export default function Events() {
   return (
@@ -46,7 +48,12 @@ export default function Events() {
           </div>
           <Link href="/"><p className={styles.page_content__details__link}>Olvass Tovább</p></Link>
         </div>
+        <div className={styles.page_content__events_near}>
+          <h4>További hasonló esemény</h4>
+          <EventsNear />
+        </div>
       </div>
+      <Divider width="xlarge" />
     </div>
   );
 }
