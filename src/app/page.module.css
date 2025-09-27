@@ -191,6 +191,10 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
+}@media screen and (max-width: 640px) {
+    .events_near {
+        margin-bottom: 40px;
+    }
 }
 
 .home_partners h3 {
