@@ -35,14 +35,14 @@ export default function Home() {
           <h3 className={styles.gradient_text}>Kiemelt kategóriák</h3>
           <Divider width="small" />
           <div className={styles.home_categories__cards}>
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
+            <CategoryCard index={0} />
+            <CategoryCard index={1} />
+            <CategoryCard index={2} />
+            <CategoryCard index={3} />
+            <CategoryCard index={4} />
+            <CategoryCard index={5} />
+            <CategoryCard index={6} />
+            <CategoryCard index={7} />
           </div>
         </div>
 
