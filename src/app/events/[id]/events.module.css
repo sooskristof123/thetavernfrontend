@@ -110,7 +110,64 @@
 }
 
 .page_content__events_near {
+    position: relative;
     margin-top: 40px;
+}
+.particles {
+  position: absolute;
+  inset:-16px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.particles span{
+  --x: calc(var(--seed) * 100%);        
+  --ty: calc((var(--seed)) * -400px);         
+  --delay: calc(var(--seed) * 2s); 
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: var(--x);
+  width: 6px;
+  height: 12px;
+  background: #e75e1f;
+  border-radius: 50%;
+  box-shadow: 0px 0px 80px 8px #ffab0f;
+  opacity: 0.5;
+  animation: spark 1s infinite linear backwards;
+  animation-delay: var(--delay);
+}
+
+.particles span:nth-child(even) {
+    --rx: calc((var(--seed)) * -20deg);
+    --tx: calc((var(--seed) - 0.5) * -200px);      
+}
+.particles span:nth-child(odd) {
+    --rx: calc((var(--seed)) * 20deg);
+    --tx: calc((var(--seed) - 0.5) * 200px);      
+}
+
+@keyframes spark {
+  0% {
+    transform: translate(0,0) rotate(0deg) scale(0.5);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(calc(var(--tx) / 4), calc(var(--ty) / 4)) rotate(calc(var(--rx) / 4)) scale(0.7);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(calc(var(--tx) / 2), calc(var(--ty) / 2)) rotate(calc(var(--rx) / 2)) scale(0.9);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(calc(3 * var(--tx) / 4), calc(3 * var(--ty) / 4)) rotate(calc(3 * var(--rx) / 4)) scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rx)) scale(1);
+    opacity: 0;
+  }
 }
 
 .page_content__events_near::after {
@@ -120,9 +177,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/particles.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+
   background-size: auto;
   transform: rotate(180deg);
   pointer-events: none;
@@ -134,14 +189,30 @@
 .page_content__events_near::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -50px;  /* start slightly off */
+  left: -50px;
+  width: 120%; /* slightly bigger to allow movement */
+  height: 120%;
   background: 
-    radial-gradient(1200px 400px at 50% 100%, #882A11, transparent 100%);
+    radial-gradient(1200px 400px at 50% 100%, #882A11, transparent 100%),
+     radial-gradient(800px 300px at 20% 80%, #e74a1f, transparent 100%);
   filter: blur(150px);
   z-index: -1;
+
+	animation: backlight 1s ease-in-out infinite alternate;
+
+
+}
+@keyframes backlight{
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(120px) translateY(40px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
 
 .page_content__events_near h4 {
