@@ -224,6 +224,28 @@
     width: 1200px;
     margin: 0 auto;
     margin-top: 36px;
+    position: relative;
+}
+
+.page_content__datetimes_gradient{
+    position: absolute;
+    inset: 0;
+    z-index: -6;
+    pointer-events: none;
+}
+
+.page_content__datetimes_gradient span{
+    position: absolute;
+    display:block;
+    left: -100px;
+    top: -50px;
+    height: 520px;
+    width: 1500px;
+    border-radius: 50%;
+    background:rgba(93, 26, 9, .39);
+    filter: blur(150px);
+    z-index: -1;
+
 }
 
 .page_content__datetimes h4 {

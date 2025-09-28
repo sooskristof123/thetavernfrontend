@@ -53,6 +53,9 @@ export default function Events() {
         </div>
         <div className={styles.page_content__datetimes}>
           <h4>Időpontok</h4>
+          <div className={styles.page_content__datetimes_gradient}>
+            <span></span>
+          </div>
           <div className={styles.page_content__datetimes__cards}>
             <DateTimeCard description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
             <DateTimeCard />
