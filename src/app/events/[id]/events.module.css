@@ -164,4 +164,26 @@
     gap: 26px;
 }
 
+.page_content__location {
+    padding-top: 36px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.page_content__location__address{
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+}
+.page_content__location__address p:nth-child(1) {
+    font-size: 18px; 
+    font-weight: 700;
+    letter-spacing: .72px;
+}
+
+.page_content__location__address p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 6px;
+    letter-spacing: .64px;
+}
