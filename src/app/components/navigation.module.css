@@ -7,9 +7,16 @@
     margin-right: 40px;
 }
 
+.navigation_mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    gap: 18px;
+}
+
 @media screen and (max-width: 640px) {
     .navigation {
         display: none;
-        
     }
 }
