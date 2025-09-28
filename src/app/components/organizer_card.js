@@ -23,7 +23,19 @@ export default function OrganizerCard() {
           </div>
         </div>
         <div className={styles.organizer_card__header__follow}>
-            <Button label="Követés" variant="secondary" animated={true} />
+          <Button label="Követés" variant="secondary" animated={true} />
+          <Button label=" " variant="secondary" animated={true} />
+        </div>
+      </div>
+
+      <div className={styles.organizer_card__header__profile__mobile__info__stats}>
+        <div className={styles.organizer_card__header__profile__mobile__info__stats__item}>
+          <p className={styles.organizer_card__header__profile__mobile__info__stats__item__number}>95</p>
+          <p className={styles.organizer_card__header__profile__mobile__info__stats__item__label}>követő</p>
+        </div>
+        <div className={styles.organizer_card__header__profile__mobile__info__stats__item}>
+          <p className={styles.organizer_card__header__profile__mobile__info__stats__item__number}>14</p>
+          <p className={styles.organizer_card__header__profile__mobile__info__stats__item__label}>esemény</p>
         </div>
       </div>
 
