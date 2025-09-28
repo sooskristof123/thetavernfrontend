@@ -3,10 +3,17 @@
     flex-direction: column;
     position: relative;
     width: 282px;
+    cursor: pointer;
     height: 96px;
     border-radius: 12px;
     background: linear-gradient(90deg, rgba(225, 124, 96, .58), rgba(255, 147, 119, .58));
     padding: 1px;
+    transition: box-shadow 0.3s ease;
+}
+
+.category_card:hover {
+    box-shadow: 0 0 10px rgba(195, 79, 49, 0.6),
+        0 0 30px rgba(118, 30, 8, 0.5);
 }
 
 .category_card::before {
