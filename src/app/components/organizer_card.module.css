@@ -135,3 +135,88 @@
     background-color: rgba(255, 255, 255, 0.08);
     z-index: 2;
 }
+
+.organizer_card__header__profile__mobile__info__stats {
+    display: none;
+}
+
+.organizer_card__header__profile__mobile__info__stats > :first-child {
+    padding-right: 16px;
+    position: relative;
+}
+
+.organizer_card__header__profile__mobile__info__stats > :first-child::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, .6);
+    width: 1px;
+    height: 32.5px;
+}
+
+.organizer_card__header__profile__mobile__info__stats > :last-child {
+    margin-left: 16px;
+}
+
+.organizer_card__header__profile__mobile__info__stats__item__number {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.organizer_card__header__profile__mobile__info__stats__item__label {
+    font-size: 14px;
+}
+
+.organizer_card__header__follow > :nth-child(2) {
+        display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .organizer_card {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .organizer_card__header__profile__image {
+        margin-left: 16px;
+    }
+
+    .organizer_card__header__profile__info__name {
+        width: 190px;
+    }
+
+    .organizer_card__header__mobile__follow {
+        width: 44px;
+        height: 44px;
+    }
+
+    .organizer_card__header__profile__info__stats {
+        display: none;
+    }
+
+    .organizer_card__header__follow button {
+        display: none;
+    }
+
+    .organizer_card__header__follow > :nth-child(2) {
+        display: block;
+    }
+
+    .organizer_card__header__profile__mobile__info__stats {
+        display: flex;
+        margin-left: 16px;
+        margin-top: 13px;
+    }
+
+    .organizer_card__bio {
+        width: 326px;
+        margin-left: 16px;
+    }
+
+    .organizer_card__social {
+        margin-left: 16px;
+    }
+}
