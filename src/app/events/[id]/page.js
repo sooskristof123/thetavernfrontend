@@ -6,6 +6,7 @@ import Link from "next/link";
 import Divider from "@/app/components/divider";
 import EventsNear from "@/app/sections/events_near";
 import DateTimeCard from "@/app/components/datetime_card";
+import LocationCard from "@/app/components/location_card";
 
 export default function Events() {
   return (
@@ -57,6 +58,14 @@ export default function Events() {
             <DateTimeCard description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
             <DateTimeCard />
           </div>
+        </div>
+        <div className={styles.page_content__location}>
+          <h4>Helyszín</h4>
+          <div className={styles.page_content__location__address}>
+            <p>Debreceni Egyetem</p>
+            <p>Debrecen Egyetem tér 1, 4032</p>
+          </div>
+          <LocationCard location="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8435.365785041067!2d21.619547750910066!3d47.55504320720335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470df39a92233b%3A0x158b32cc387080a5!2sDebreceni%20Egyetem!5e0!3m2!1shu!2shu!4v1759054267093!5m2!1shu!2shu" />
         </div>
         <div className={styles.page_content__events_near}>
           <h4>További hasonló esemény</h4>
