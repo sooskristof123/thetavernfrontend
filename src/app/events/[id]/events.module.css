@@ -187,3 +187,12 @@
     margin-top: 6px;
     letter-spacing: .64px;
 }
+
+.page_content__organizer {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.page_content__organizer h4 {
+    margin-bottom: 16px;
+}
