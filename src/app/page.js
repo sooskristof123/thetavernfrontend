@@ -1,4 +1,3 @@
-"use client"
 import styles from "./page.module.css";
 import Header from "./sections/header";
 import Hero from "./sections/hero";
@@ -14,51 +13,7 @@ import News from "./sections/new";
 import Footer from "./sections/footer";
 import Link from "next/link";
 
-import React, {useState, useRef, Suspense} from "react";
-import {Points, PointMaterial, Preload} from '@react-three/drei'
-import * as random from "maath/random/dist/maath-random.esm"
-import { Canvas, useFrame} from "react-three-fiber";
-
 export default function Home() {
-
-  const StarBackground = (props) => {
-    const ref = useRef();
-    const [sphere] = useState(() =>
-      random.inCircle(new Float32Array(5000))
-    );
-    
-    useFrame((state, delta) => {
-      ref.current.rotation.x -= 0.008;
-    })
-
-    return(
-      <group rotation={[0,0,0]}>
-        <Points
-          ref={ref}
-          positions={sphere}
-          stride={3}
-          frustumCulled
-          {...props}
-        >
-          <PointMaterial 
-          transparent
-          color = "$fff"
-          size = {0.006}
-          sizeAttenuation = {true}
-          dethWire={false}
-          />
-        </Points>
-      </group>
-    )
-  };
-
-  const StarsCanvas = () => (
-      <Canvas camera={{position: [0,0,1]}}>  
-        <Suspense fallback={null}>
-          <StarBackground />
-        </Suspense>
-      </Canvas>
-  )
   return (
     <div className={styles.page}>
         <Hero />
@@ -132,10 +87,8 @@ export default function Home() {
           <Divider width="small" />
           <Partners />
         </div>
+
         <div className={styles.home_news}>
-          <div className={styles.home_news__paticles}>
-            <StarsCanvas />
-          </div>
           <h3>Legújabb híreink</h3>
           <Divider width="small" />
           <News />
