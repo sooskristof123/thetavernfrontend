@@ -148,4 +148,20 @@
     margin-bottom: 20px;
 }
 
+.page_content__datetimes {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.page_content__datetimes h4 {
+    margin-bottom: 16px;
+}
+
+.page_content__datetimes__cards {
+    display: flex;
+    overflow: hidden;
+    gap: 26px;
+}
+
 

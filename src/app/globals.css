@@ -21,7 +21,7 @@ h1, h2, h3, p {
   cursor: default;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Jersey 10";
   font-weight: normal;
 }
@@ -43,6 +43,11 @@ h3 {
 
 h4 {
   font-size: 40px;
+}
+
+h5 {
+  font-size: 32px;
+  letter-spacing: 1.28px;
 }
 
 p {
