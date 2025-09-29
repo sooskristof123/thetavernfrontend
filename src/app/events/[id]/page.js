@@ -8,6 +8,7 @@ import EventsNear from "@/app/sections/events_near";
 import DateTimeCard from "@/app/components/datetime_card";
 import LocationCard from "@/app/components/location_card";
 import OrganizerCard from "@/app/components/organizer_card";
+import TextWithHover from "@/app/components/text_with_hover";
 
 export default function Events() {
   return (
@@ -49,7 +50,11 @@ export default function Events() {
             </p>
 
           </div>
-          <Link href="/"><p className={styles.page_content__details__link}>Olvass Tovább</p></Link>
+          <div className={styles.page_content__details__link}>
+            <Link href="/">
+              <TextWithHover label="Olvass Tovább" />
+            </Link>
+          </div>
         </div>
         <div className={styles.page_content__datetimes}>
           <h4>Időpontok</h4>
