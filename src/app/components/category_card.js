@@ -4,16 +4,16 @@ import styles from "./category_card.module.css";
 import { motion } from "framer-motion";
 
 export default function CategoryCard(props) {
+  const pseudoRandomDelay = ((props.index * 37) % 10) * 0.1;
+  
   return (
     <motion.div 
       className={styles.category_card}
-      initial={{ opacity: 0, rotateY: 45 }}
-      whileInView={{ opacity: 1,  rotateY: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }} 
       transition={{
-            duration: 0.7,
-            delay: props.index * 0.1,
-            type: "spring",
+        delay: pseudoRandomDelay,
       }}
     >
       <Image className={styles.category_card__icon} src="/icons/trophy_icon.svg" alt="Trophy Icon" width={65} height={65} />
