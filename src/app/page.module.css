@@ -210,39 +210,10 @@
   position: relative;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
-.home_news::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/images/particles.png");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: auto;
-  transform: rotate(180deg);
-  pointer-events: none;
-  z-index: 0;
-  mix-blend-mode: lighten;
-  padding-bottom: 80px;
-}
 
-.home_news::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    radial-gradient(1200px 1100px at bottom, #882A11, transparent 100%);
-  filter: blur(150px);
-  z-index: -1;
-}
 
 .home_news h3 {
   margin-bottom: 8px;
