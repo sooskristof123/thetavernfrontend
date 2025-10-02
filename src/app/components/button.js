@@ -43,6 +43,7 @@ export default function Button(props) {
         whileTap={{ scale: 0.985 }}
         className={buttonClass}
         ref={btnRef}
+        onClick={props.onClick}
       >
         <span 
           ref={spanRef}
@@ -51,7 +52,7 @@ export default function Button(props) {
         <p>{props.label || "Label"}</p>
       </motion.button> 
       : 
-      <button className={buttonClass}>
+      <button className={buttonClass} onClick={props.onClick}>
         <p>{props.label || "Label"}</p>
       </button>
   );
