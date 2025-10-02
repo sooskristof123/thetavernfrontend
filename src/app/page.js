@@ -12,6 +12,7 @@ import Partners from "./sections/partners";
 import News from "./sections/new";
 import Footer from "./sections/footer";
 import Link from "next/link";
+import ParticleAnimation from "./components/particle_animation";
 
 export default function Home() {
   return (
@@ -89,6 +90,7 @@ export default function Home() {
         </div>
 
         <div className={styles.home_news}>
+          <ParticleAnimation />
           <h3>Legújabb híreink</h3>
           <Divider width="small" />
           <News />
