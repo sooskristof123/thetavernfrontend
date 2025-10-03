@@ -1,0 +1,23 @@
+.profile_icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    position: relative;
+}
+
+.profile_icon::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px; 
+    background: linear-gradient(45deg, #C34F31, #761E08);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+}
