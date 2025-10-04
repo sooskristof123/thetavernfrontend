@@ -16,6 +16,14 @@ body {
   background-color: var(--background);
 }
 
+::selection {
+  background: rgba(225, 124, 96, .3);
+}
+
+h1::selection , h2::selection , h3::selection , h4::selection , h5::selection {
+  color: white;
+}
+
 h1, h2, h3, p {
   color: var(--foreground);
   cursor: default;
